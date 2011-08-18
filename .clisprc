@@ -1,0 +1,5 @@
+(load #p"/usr/share/common-lisp/source/asdf/asdf.lisp")
+(push #p"/home/sopindm/lisp/systems/" asdf:*central-registry*)
+(push #p"/usr/share/common-lisp/systems/" asdf:*central-registry*)
+
+(defmacro asdf-require (system) `(asdf:oos 'asdf:load-op ,system))
