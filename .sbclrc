@@ -1,0 +1,1 @@
+(push "/home/sopindm/lisp/systems" asdf:*central-registry*)
