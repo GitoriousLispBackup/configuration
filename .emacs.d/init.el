@@ -16,4 +16,13 @@
       (revert-buffer t t t)
         )
 
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+
+(global-set-key "\C-w" 'backward-kill-word)
+(global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key [f5] 'refresh-file)
+(global-set-key [f6] 'call-last-kbd-macro)
+(global-set-key "\C-x'" 'next-error)
+(global-set-key "\C-x\\" 'previous-error)
