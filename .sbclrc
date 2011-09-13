@@ -1,1 +1,1 @@
-(push "/home/sopindm/lisp/systems" asdf:*central-registry*)
+(push "/home/sopindm/lisp/systems/" asdf:*central-registry*)
